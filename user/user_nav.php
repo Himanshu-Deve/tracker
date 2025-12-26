@@ -8,6 +8,13 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'user') {
 }
 ?>
 
+
+<?php if (isset($_GET['inactive'])): ?>
+<div class="bg-red-100 text-red-700 p-3 text-center">
+    Your account is inactive. Contact administrator.
+</div>
+<?php endif; ?>
+
 <nav class="bg-gray-900 text-white px-6 py-4 flex justify-between items-center">
 
     <!-- LEFT -->

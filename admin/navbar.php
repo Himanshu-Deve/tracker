@@ -13,6 +13,13 @@ if (
 $role = $_SESSION['user_role'];
 ?>
 
+
+<?php if (isset($_GET['inactive'])): ?>
+<div class="bg-red-100 text-red-700 p-3 text-center">
+    Your account is inactive. Contact administrator.
+</div>
+<?php endif; ?>
+
 <nav class="bg-gray-900 text-white px-6 py-4 flex justify-between items-center">
 
     <!-- LEFT -->
@@ -37,7 +44,7 @@ $role = $_SESSION['user_role'];
 
         <?php if ($role === 'owner'): ?>
             <!-- OWNER ONLY -->
-            <a href="all_users.php" class="hover:text-gray-300">
+            <a href="users.php" class="hover:text-gray-300">
                 All Users
             </a>
         <?php endif; ?>
