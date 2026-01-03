@@ -1,8 +1,6 @@
 <?php
-require './session.php';
+session_start();
 session_destroy();
+header("Location: login");
+exit();
 ?>
-<script>
-    localStorage.clear();
-    window.location.href = "login.php";
-</script>

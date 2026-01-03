@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "question": "What services does your real estate company provide?",
+      "answer": "We provide property buying, selling, interior designing, architectural planning, site supervision, and project development."
+    },
+    {
+      "question": "How long does a typical project take to complete?",
+      "answer": "The timeline varies based on project size, but most residential projects take between 2 to 6 months."
+    },
+    {
+      "question": "Do you offer custom interior design solutions?",
+      "answer": "Yes, we tailor all interior designs to match your style, budget, and space requirements."
+    },
+    {
+      "question": "Can I schedule a site visit?",
+      "answer": "Absolutely! You can contact our team to arrange a guided site visit at your preferred time."
+    },
+    {
+      "question": "Do you assist with property loan or financing?",
+      "answer": "Yes, we partner with major banks and help our clients throughout the loan process."
+    }
+  ]
+}
