@@ -39,7 +39,7 @@
           class="search-input w-full rounded-xl border-gray-100 pl-12 pr-4 py-4 text-sm focus:outline-none transition-all" />
       </div>
       <button id="toggleFilters"
-        class="flex items-center gap-2 px-8 py-4 bg-[#0f0f10] text-gold rounded-xl hover:bg-gold hover:text-black font-bold uppercase tracking-widest text-xs transition-all shadow-lg">
+        class="flex items-center gap-2 px-8 py-4 bg-[#0f0f10] text-gold rounded-xl font-bold uppercase tracking-widest text-xs transition-all shadow-lg">
         <i class="fas fa-sliders-h"></i> Filters
       </button>
     </div>

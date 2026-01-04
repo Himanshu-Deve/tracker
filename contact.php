@@ -54,9 +54,8 @@
   
   <div class="w-full h-[450px] map-container relative">
     <div class="absolute inset-0 pointer-events-none shadow-[inset_0px_0px_100px_rgba(0,0,0,0.2)] z-10"></div>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094433!2d144.9537363159046!3d-37.81627974202108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f3e1b7%3A0x5045675218ce840!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1702532078940!5m2!1sen!2sin" 
-      width="100%" height="100%" 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.690811468434!2d76.9991243567423!3d28.58832614909359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d110003549919%3A0x4672afb384562b27!2sTirupati%20Apartment!5e0!3m2!1sen!2sin!4v1767510596818!5m2!1sen!2sin"
+         width="100%" height="100%" 
       style="border:0;" allowfullscreen="" loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
@@ -81,7 +80,7 @@
             </div>
             <div>
               <p class="text-[10px] uppercase font-black tracking-widest text-gray-400 mb-1">Corporate Office</p>
-              <p class="text-gray-800 font-bold leading-snug">123 Business Avenue, <br/>Melbourne, Australia</p>
+              <p class="text-gray-800 font-bold leading-snug"> B-17/1/1 Tirupati Appartment, <br/>Shyam Vihar Phase 2 <br>New Delhi -110043</p>
             </div>
           </div>
 
@@ -91,8 +90,8 @@
             </div>
             <div>
               <p class="text-[10px] uppercase font-black tracking-widest text-gray-400 mb-1">Direct Line</p>
-              <p class="text-gray-800 font-bold">+61 3 1234 5678</p>
-              <p class="text-gray-400 text-sm">Mon - Fri, 9am - 6pm</p>
+              <p class="text-gray-800 font-bold">+91 9818604006</p>
+              <p class="text-gray-400 text-sm">Anytime, 9am - 8pm</p>
             </div>
           </div>
 
@@ -102,7 +101,7 @@
             </div>
             <div>
               <p class="text-[10px] uppercase font-black tracking-widest text-gray-400 mb-1">Digital Correspondence</p>
-              <p class="text-gray-800 font-bold">concierge@ddassociates.com</p>
+              <p class="text-gray-800 font-bold">info@ddassociate.in</p>
               <p class="text-gray-400 text-sm">Fast response within 24h</p>
             </div>
           </div>
@@ -126,14 +125,14 @@
             </div>
             <div>
               <label class="text-[10px] uppercase font-black tracking-widest text-gray-500 ml-1">Email Address</label>
-              <input type="email" name="email" required placeholder="email@domain.com"
+              <input type="email" name="email" required placeholder="email@gmail.com"
                 class="mt-2 w-full rounded-2xl form-input px-6 py-4 text-sm font-semibold" />
             </div>
           </div>
 
           <div>
             <label class="text-[10px] uppercase font-black tracking-widest text-gray-500 ml-1">Mobile Number</label>
-            <input type="tel" name="phone" required placeholder="+61 ..."
+            <input type="tel" name="phone" required placeholder="+91 ..."
               class="mt-2 w-full rounded-2xl form-input px-6 py-4 text-sm font-semibold" />
           </div>
 

@@ -2,7 +2,8 @@
 $title = "About Us"; 
 include __DIR__ . "/includes/header.php"; 
 
-// Updated JSON Data with the correct company name
+
+// JSON updated ONLY: owners & single location
 $companyData = json_decode('{
   "company_name": "DD ASSOCIATES",
   "tagline": "Premium Real Estate Advisory & Property Consulting",
@@ -28,38 +29,30 @@ $companyData = json_decode('{
       "description": "Your requirement, budget, and long-term value always remain our priority."
     }
   ],
+
   "locations": [
     {
-      "title": "Gurugram",
-      "description": "Premium residential and commercial spaces across Golf Course Road, MG Road & NH8.",
-      "image": "https://images.unsplash.com/photo-1560523159-74b3f21f6b97?auto=format&fit=crop&w=1200&q=80"
-    },
-    {
-      "title": "Cyber City",
-      "description": "Prime corporate & leasing opportunities in the business capital of NCR.",
-      "image": "https://images.unsplash.com/photo-1580741572259-c094f8a981c9?auto=format&fit=crop&w=1200&q=80"
-    },
-    {
-      "title": "Luxury Apartments",
-      "description": "Exclusive high-rise apartments with modern lifestyle amenities.",
-      "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1200&q=80"
+      "title": "New Delhi",
+      "description": "B-17/1/1 Tirupati Apartment, Shyam Vihar Phase 2, New Delhi - 110043",
+      "image": "https://res.cloudinary.com/df0mvniha/image/upload/v1767413196/D_ASSOCIATES_br6ur6.jpg"
     }
   ],
+
   "team": [
     {
-      "name": "Amit Sharma",
-      "role": "Founder & Lead Consultant",
-      "description": "Amit brings 10+ years of experience delivering real estate solutions for residential & corporate clients."
+      "name": "Lokesh Sharma",
+      "role": "Owner",
+      "description": "Primary contact for sales and enquiries. Guides clients throughout the property buying process."
     },
     {
-      "name": "Priya Mehta",
-      "role": "Operations Head",
-      "description": "Ensures smooth service operations, client onboarding, and documentation handling."
+      "name": "Ajay Sirohi",
+      "role": "Co-Owner",
+      "description": "Assists clients with site visits, options selection and deal finalization."
     },
     {
-      "name": "Rohit Verma",
-      "role": "Property Specialist",
-      "description": "Expert in project tours, locality insights & property comparisons."
+      "name": "D.D. Sharma",
+      "role": "Senior Advisor",
+      "description": "Leads customer consultation, documentation assistance and overall advisory support."
     }
   ]
 }', true);
@@ -123,26 +116,42 @@ $companyData = json_decode('{
   </div>
 </section>
 
-
 <section class="bg-black py-20 px-4">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-3xl font-bold text-gold text-center uppercase tracking-widest">Where We Operate</h2>
-    <p class="text-gray-500 text-center mt-3 max-w-xl mx-auto">Prime localities we specialize in.</p>
+  <div class="max-w-4xl mx-auto">
+    
+    <h2 class="text-3xl font-bold text-gold text-center uppercase tracking-widest">
+      Where We Operate
+    </h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+    <p class="text-gray-500 text-center mt-3 max-w-xl mx-auto">
+      Our primary office location.
+    </p>
+
+    <!-- SINGLE FULL-WIDTH LOCATION CARD -->
+    <div class="mt-12">
       <?php foreach ($companyData["locations"] as $loc): ?>
-        <div class="group relative overflow-hidden rounded-xl bg-[#111] border border-yellow-900/10">
-          <div class="overflow-hidden">
-            <img src="<?= $loc["image"] ?>" alt="<?= $loc["title"] ?>" class="h-64 w-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700">
+        <div class="group relative overflow-hidden rounded-2xl bg-[#111] border border-yellow-900/10">
+
+          <img src="<?= $loc["image"] ?>" 
+               alt="<?= $loc["title"] ?>" 
+               class="h-80 w-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition duration-700">
+
+          <div class="p-10">
+            <h3 class="text-2xl font-bold text-gold tracking-wider">
+              <?= $loc["title"] ?>
+            </h3>
+
+            <div class="w-full h-0.5 bg-gold/20 my-4 group-hover:bg-gold transition-all duration-500"></div>
+
+            <p class="text-gray-300 text-lg leading-relaxed">
+              <?= $loc["description"] ?>
+            </p>
           </div>
-          <div class="p-8">
-            <h3 class="text-xl font-bold text-gold tracking-wider"><?= $loc["title"] ?></h3>
-            <div class="w-12 h-0.5 bg-gold/30 my-4 group-hover:w-full transition-all duration-500"></div>
-            <p class="text-gray-400 text-sm leading-relaxed"><?= $loc["description"] ?></p>
-          </div>
+
         </div>
       <?php endforeach; ?>
     </div>
+
   </div>
 </section>
 

@@ -100,7 +100,7 @@
         <h2 class="text-4xl font-bold text-gray-900 tracking-tighter uppercase">Signature Projects</h2>
         <div class="w-16 h-1 bg-gold mx-auto mt-6"></div>
     </div>
-    <div id="completedProjects" class="grid grid-cols-1 md:grid-cols-3 gap-10"></div>
+    <div id="completedProjects"   class="flex overflow-x-auto space-x-6 pb-4"></div>
   </div>
 </section>
 
@@ -215,27 +215,49 @@ $(function () {
     }
 
     // Property Loading
-    $.getJSON('/assets/data/properties.json', function (data) {
-        const completed = data.filter(p => p.status === "complete");
-        const container = $("#completedProjects");
-        completed.forEach(p => {
-            container.append(`
-                <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
-                    <div class="overflow-hidden relative h-72">
-                        <img src="${p.image_thumbnail}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                        <div class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-white px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Verified</div>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-xl font-bold text-gray-900 mb-1 uppercase tracking-tighter">${p.title}</h3>
-                        <p class="text-gray-400 text-xs mb-6 font-bold uppercase tracking-widest">${p.location}</p>
-                        <div class="flex items-center text-gold text-xs">
-                            ${[1,2,3,4,5].map(i => `<i class="fa-solid fa-star ${p.rating >= i ? '' : 'text-gray-200'}"></i>`).join('')}
-                            <span class="ml-2 text-gray-400 font-bold">(${p.rating})</span>
-                        </div>
-                    </div>
-                </div>`);
-        });
-    });
+   $.getJSON('/assets/data/properties.json', function (data) {
+
+  const completed = data.filter(p => p.status === "new");
+  const container = $("#completedProjects");
+
+  completed.forEach(p => {
+
+    container.append(`
+      <!-- 1 card on mobile / 3 cards on desktop -->
+       <a href="property.php?id=${p.id}" class="min-w-[90%] md:min-w-[33%] lg:min-w-[33%] flex-shrink-0">
+      <div class="min-w-[90%] md:min-w-[33%] lg:min-w-[33%] 
+                  group bg-white rounded-xl overflow-hidden 
+                  shadow hover:shadow-2xl transition-all duration-500">
+
+        <div class="overflow-hidden relative h-64">
+          <img src="${p.image_thumbnail}" alt="${p.title}"
+               class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          <div class="absolute top-3 left-3 bg-black/60 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase">
+            Verified
+          </div>
+           <div class="absolute top-3 right-3 bg-green-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase">
+            New
+          </div>
+        </div>
+
+        <div class="p-6">
+          <h3 class="text-lg font-bold uppercase">${p.title}</h3>
+          <p class="text-gray-400 text-xs uppercase mb-3">${p.location}</p>
+
+          <div class="flex items-center text-yellow-400 text-xs">
+            ${[1,2,3,4,5].map(i =>
+              `<i class="fa-solid fa-star ${p.rating >= i ? '' : 'text-gray-300'}"></i>`
+            ).join('')}
+            <span class="ml-2 text-gray-500 font-bold text-sm">(${p.rating})</span>
+          </div>
+        </div>
+      </div>
+      </a>
+    `);
+
+  });
+});
+
 
     // Testimonials
     function renderTestimonials(testimonials) {

@@ -2,45 +2,143 @@
   "testimonials": [
     {
       "id": 1,
-      "name": "Charles Moore",
-      "title": "Entrepreneur",
+      "name": "Rahul Mehta",
+      "title": "Software Engineer",
       "rating": 5,
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "content": "Very smooth experience from property visit to final registration. The team was transparent and guided me at every step."
     },
     {
       "id": 2,
-      "name": "Andi Pung",
-      "title": "Entrepreneur",
+      "name": "Priya Sharma",
+      "title": "Doctor",
       "rating": 5,
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "content": "They helped me find a home in a safe locality with all amenities nearby. Documentation was handled professionally."
     },
     {
       "id": 3,
-      "name": "Sarah Johnson",
-      "title": "Marketing Director",
+      "name": "Amit Verma",
+      "title": "Business Owner",
       "rating": 5,
-      "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "content": "Excellent market knowledge and genuine advice. They negotiated a great deal and saved me both time and money."
     },
     {
       "id": 4,
-      "name": "Michael Chen",
-      "title": "Product Manager",
+      "name": "Neha Patel",
+      "title": "Interior Designer",
       "rating": 5,
-      "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+      "content": "The team clearly understood my design preferences and suggested only relevant projects. Very honest and supportive."
     },
     {
       "id": 5,
-      "name": "Emma Wilson",
-      "title": "Business Owner",
+      "name": "Arjun Nair",
+      "title": "Financial Analyst",
       "rating": 5,
-      "content": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet."
+      "content": "Professional service with timely updates. Their property evaluation helped me make an informed investment decision."
     },
     {
       "id": 6,
-      "name": "David Rodriguez",
+      "name": "Ananya Iyer",
+      "title": "Professor",
+      "rating": 5,
+      "content": "The process was stress free and well organized. All my queries were answered patiently. Truly trustworthy people."
+    },
+    {
+      "id": 7,
+      "name": "Rohit Singh",
+      "title": "Consultant",
+      "rating": 5,
+      "content": "Found a great apartment within my budget. The team was courteous and handled paperwork end-to-end."
+    },
+    {
+      "id": 8,
+      "name": "Sanya Kapoor",
+      "title": "Student",
+      "rating": 5,
+      "content": "Very friendly experience. Everything was explained clearly and there were no hidden charges. Highly recommended."
+    },
+    {
+      "id": 9,
+      "name": "Manish Gupta",
+      "title": "Chartered Accountant",
+      "rating": 5,
+      "content": "They provided detailed legal and financial clarity before purchase. I felt confident throughout the transaction."
+    },
+    {
+      "id": 10,
+      "name": "Pooja Reddy",
+      "title": "HR Manager",
+      "rating": 5,
+      "content": "I received excellent support in shortlisting projects near my office. Very responsive and professional team."
+    },
+    {
+      "id": 11,
+      "name": "Aditya Deshpande",
+      "title": "Mechanical Engineer",
+      "rating": 5,
+      "content": "Their advice was practical and realistic. They didn’t oversell anything and focused on what suited my needs best."
+    },
+    {
+      "id": 12,
+      "name": "Kavya Menon",
+      "title": "Architect",
+      "rating": 5,
+      "content": "Great eye for detail and project quality. They showed only reputed builders and verified properties."
+    },
+    {
+      "id": 13,
+      "name": "Vikram Malhotra",
+      "title": "Hotelier",
+      "rating": 5,
+      "content": "The investment suggestions were spot on. Rental yield and appreciation potential were clearly explained."
+    },
+    {
+      "id": 14,
+      "name": "Shruti Jain",
+      "title": "Lawyer",
+      "rating": 5,
+      "content": "All legal documentation was thoroughly checked and explained. The transparency of the team really impressed me."
+    },
+    {
+      "id": 15,
+      "name": "Karan Arora",
       "title": "Startup Founder",
       "rating": 5,
-      "content": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+      "content": "Quick responses, professional conduct and deep knowledge of the market. A great partner for real estate needs."
+    },
+    {
+      "id": 16,
+      "name": "Meera Krishnan",
+      "title": "Teacher",
+      "rating": 5,
+      "content": "Found my dream home within a week. They understood my requirement for schools and hospitals nearby."
+    },
+    {
+      "id": 17,
+      "name": "Nikhil Saxena",
+      "title": "Bank Manager",
+      "rating": 5,
+      "content": "Loan assistance and registration were handled smoothly. I faced zero hassle during the entire process."
+    },
+    {
+      "id": 18,
+      "name": "Aisha Khan",
+      "title": "Digital Marketer",
+      "rating": 5,
+      "content": "They showed modern properties with great amenities. Communication was clear and very professional."
+    },
+    {
+      "id": 19,
+      "name": "Harshad Kulkarni",
+      "title": "Civil Engineer",
+      "rating": 5,
+      "content": "Strong technical understanding of construction quality and approvals. Their guidance was very valuable."
+    },
+    {
+      "id": 20,
+      "name": "Ritu Agarwal",
+      "title": "Entrepreneur",
+      "rating": 5,
+      "content": "From the first call to key handover, the team was supportive and transparent. Truly a customer-centric company."
     }
   ]
 }
